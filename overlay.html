@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 
 <style>
+/* ===== FONTE ===== */
 @font-face {
   font-family: "Cascadia";
   src: local("Cascadia Code");
@@ -174,13 +175,12 @@ setInterval(() => {
   document.getElementById("pv").innerText = pvAtual + "/" + data.pvMax;
   document.getElementById("pd").innerText = pdAtual;
 
+  // Para funcionar no GitHub Pages
   document.getElementById("portrait").src =
-    new URL("portraits/" + data.portrait, window.location.href);
+    "https://shinokage1976.github.io/overlay/portraits/" + data.portrait;
 
 }, 200);
 </script>
 
 </body>
 </html>
-
-
