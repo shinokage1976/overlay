@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<body>
+
+<button onclick="buff()">ATIVAR / DESATIVAR BUFF</button>
+
+<script>
+  if (!localStorage.getItem("rpg")) {
+    localStorage.setItem("rpg", JSON.stringify({
+      name: "Personagem",
+      pvBase: 52,
+      pvMax: 52,
+      pdBase: 52,
+      buffAtivo: false,
+      portrait: "normal.png"
+    }));
+  }
+
+  function buff() {
+    let data = JSON.parse(localStorage.getItem("rpg"));
+    data.buffAtivo = !data.buffAtivo;
+    data.portrait = data.buffAtivo ? "buff.png" : "normal.png";
+    localStorage.setItem("rpg", JSON.stringify(data));
+  }
+</script>
+
+</body>
+</html>
