@@ -1,0 +1,53 @@
+body {
+  background: transparent;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+#ficha {
+  width: 500px;
+  background: rgba(0,0,0,0.85);
+  padding: 15px;
+  border: 2px solid darkred;
+}
+
+#foto {
+  width: 150px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.barra {
+  height: 25px;
+  background: #222;
+  margin: 10px 0;
+  position: relative;
+}
+
+.barra span {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+.barra div {
+  height: 100%;
+}
+
+.vida div {
+  background: red;
+}
+
+.pd div {
+  background: gold;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: darkred;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
